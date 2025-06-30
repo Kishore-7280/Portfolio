@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Doe - Portfolio</title>
+    <meta name="description" content="Full Stack Developer & UI/UX Designer Portfolio">
+    <meta name="author" content="John Doe">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="styles/styles.css">
+    <script defer src="index.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">Portfolio</div>
+                
+                <!-- Desktop Menu -->
+                <nav class="nav-desktop">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#skills" class="nav-link">Skills</a>
+                    <a href="#portfolio" class="nav-link">Portfolio</a>
+                    <a href="#services" class="nav-link">Services</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" onclick="toggleMenu()">
+                    <i class="fas fa-bars" id="menu-icon"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <nav class="nav-mobile" id="mobile-menu">
+                <a href="#home" class="nav-link-mobile" onclick="closeMenu()">Home</a>
+                <a href="#about" class="nav-link-mobile" onclick="closeMenu()">About</a>
+                <a href="#skills" class="nav-link-mobile" onclick="closeMenu()">Skills</a>
+                <a href="#portfolio" class="nav-link-mobile" onclick="closeMenu()">Portfolio</a>
+                <a href="#services" class="nav-link-mobile" onclick="closeMenu()">Services</a>
+                <a href="#contact" class="nav-link-mobile" onclick="closeMenu()">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Hi, I'm <span class="text-purple">John Doe</span></h1>
+                    <h2>Full Stack Developer & UI/UX Designer</h2>
+                    <p>Passionate about creating beautiful and functional digital experiences. I transform ideas into elegant solutions through code and design.</p>
+                    
+                    <div class="hero-buttons">
+                        <button class="btn-primary">
+                            <i class="fas fa-envelope"></i>
+                            Get In Touch
+                        </button>
+                        <button class="btn-secondary">
+                            <i class="fas fa-download"></i>
+                            View My CV
+                        </button>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+
+                <div class="hero-image">
+                    <div class="profile-container">
+                        <div class="profile-ring">
+                            <div class="profile-image">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face" alt="Profile">
+                            </div>
+                        </div>
+                        <div class="floating-element floating-1"></div>
+                        <div class="floating-element floating-2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About <span class="text-purple">Me</span></h2>
+                <p>Discover my journey, passion, and the values that drive my work</p>
+            </div>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>My Story</h3>
+                    <p>With over 5 years of experience in web development and design, I've had the privilege of working with diverse clients and projects. My journey began with a simple curiosity about how websites work, which evolved into a passion for creating digital experiences that make a difference.</p>
+                    <p>I believe in the power of technology to solve real-world problems and improve people's lives. Every project I undertake is an opportunity to create something meaningful and impactful.</p>
+                    
+                    <div class="stats">
+                        <div class="stat-item">
+                            <h4>Experience</h4>
+                            <p>5+ Years</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4>Projects</h4>
+                            <p>50+ Completed</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="highlights">
+                    <div class="highlight-item">
+                        <div class="highlight-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h4>Clean Code</h4>
+                        <p>Writing maintainable and efficient code</p>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h4>Creative Design</h4>
+                        <p>Crafting beautiful user experiences</p>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h4>Fast Performance</h4>
+                        <p>Optimized for speed and efficiency</p>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h4>User-Centered</h4>
+                        <p>Focused on user needs and satisfaction</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2>My <span class="text-purple">Skills</span></h2>
+                <p>A showcase of my technical expertise and creative abilities</p>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>React</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>TypeScript</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>CSS3</span>
+                                <span>92%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 92%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Tailwind</span>
+                                <span>88%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 88%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Backend</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Node.js</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Python</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>PostgreSQL</span>
+                                <span>82%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 82%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>MongoDB</span>
+                                <span>78%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 78%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Design</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Figma</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Photoshop</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>UI/UX</span>
+                                <span>88%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Prototyping</span>
+                                <span>86%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 86%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tech-tags">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Git</span>
+                <span class="tech-tag">Docker</span>
+                <span class="tech-tag">AWS</span>
+                <span class="tech-tag">Figma</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2>My <span class="text-purple">Portfolio</span></h2>
+                <p>A collection of projects that showcase my skills and creativity</p>
+            </div>
+
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=250&fit=crop" alt="E-Commerce Platform">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-buttons">
+                                <a href="#" class="portfolio-btn">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Live
+                                </a>
+                                <a href="#" class="portfolio-btn">
+                                    <i class="fab fa-github"></i>
+                                    Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>E-Commerce Platform</h3>
+                        <p>A modern e-commerce solution with React and Node.js</p>
+                        <div class="portfolio-tags">
+                            <span class="portfolio-tag">React</span>
+                            <span class="portfolio-tag">Node.js</span>
+                            <span class="portfolio-tag">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=400&h=250&fit=crop" alt="Task Management App">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-buttons">
+                                <a href="#" class="portfolio-btn">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Live
+                                </a>
+                                <a href="#" class="portfolio-btn">
+                                    <i class="fab fa-github"></i>
+                                    Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Task Management App</h3>
+                        <p>Collaborative task management with real-time updates</p>
+                        <div class="portfolio-tags">
+                            <span class="portfolio-tag">Vue.js</span>
+                            <span class="portfolio-tag">Firebase</span>
+                            <span class="portfolio-tag">Tailwind</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=400&h=250&fit=crop" alt="Portfolio Website">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-buttons">
+                                <a href="#" class="portfolio-btn">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Live
+                                </a>
+                                <a href="#" class="portfolio-btn">
+                                    <i class="fab fa-github"></i>
+                                    Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Portfolio Website</h3>
+                        <p>Creative portfolio design for a digital agency</p>
+                        <div class="portfolio-tags">
+                            <span class="portfolio-tag">Next.js</span>
+                            <span class="portfolio-tag">Framer Motion</span>
+                            <span class="portfolio-tag">GSAP</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=400&h=250&fit=crop" alt="Mobile Banking App">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-buttons">
+                                <a href="#" class="portfolio-btn">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Live
+                                </a>
+                                <a href="#" class="portfolio-btn">
+                                    <i class="fab fa-github"></i>
+                                    Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Mobile Banking App</h3>
+                        <p>Secure mobile banking application with modern UI</p>
+                        <div class="portfolio-tags">
+                            <span class="portfolio-tag">React Native</span>
+                            <span class="portfolio-tag">Redux</span>
+                            <span class="portfolio-tag">Node.js</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=250&fit=crop" alt="AI Chat Interface">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-buttons">
+                                <a href="#" class="portfolio-btn">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Live
+                                </a>
+                                <a href="#" class="portfolio-btn">
+                                    <i class="fab fa-github"></i>
+                                    Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>AI Chat Interface</h3>
+                        <p>Intelligent chatbot with natural language processing</p>
+                        <div class="portfolio-tags">
+                            <span class="portfolio-tag">Python</span>
+                            <span class="portfolio-tag">TensorFlow</span>
+                            <span class="portfolio-tag">Flask</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=250&fit=crop" alt="Social Media Dashboard">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-buttons">
+                                <a href="#" class="portfolio-btn">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Live
+                                </a>
+                                <a href="#" class="portfolio-btn">
+                                    <i class="fab fa-github"></i>
+                                    Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Social Media Dashboard</h3>
+                        <p>Analytics dashboard for social media management</p>
+                        <div class="portfolio-tags">
+                            <span class="portfolio-tag">Angular</span>
+                            <span class="portfolio-tag">D3.js</span>
+                            <span class="portfolio-tag">Express</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>My <span class="text-purple">Services</span></h2>
+                <p>Comprehensive digital solutions to bring your ideas to life</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Web Development</h3>
+                    <p>Custom web applications built with modern technologies and best practices.</p>
+                    <ul class="service-features">
+                        <li>React/Vue/Angular</li>
+                        <li>Node.js/Python</li>
+                        <li>Database Design</li>
+                        <li>API Integration</li>
+                    </ul>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>UI/UX Design</h3>
+                    <p>Beautiful and intuitive user interfaces that enhance user experience.</p>
+                    <ul class="service-features">
+                        <li>User Research</li>
+                        <li>Wireframing</li>
+                        <li>Prototyping</li>
+                        <li>Visual Design</li>
+                    </ul>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile Development</h3>
+                    <p>Native and cross-platform mobile applications for iOS and Android.</p>
+                    <ul class="service-features">
+                        <li>React Native</li>
+                        <li>Flutter</li>
+                        <li>Native iOS/Android</li>
+                        <li>App Store Deployment</li>
+                    </ul>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>E-Commerce Solutions</h3>
+                    <p>Complete e-commerce platforms with payment integration and management.</p>
+                    <ul class="service-features">
+                        <li>Online Stores</li>
+                        <li>Payment Gateways</li>
+                        <li>Inventory Management</li>
+                        <li>Analytics</li>
+                    </ul>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Backend Development</h3>
+                    <p>Scalable server-side applications and database architecture.</p>
+                    <ul class="service-features">
+                        <li>RESTful APIs</li>
+                        <li>Database Design</li>
+                        <li>Cloud Deployment</li>
+                        <li>Security</li>
+                    </ul>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Performance Optimization</h3>
+                    <p>Speed up your applications and improve user experience.</p>
+                    <ul class="service-features">
+                        <li>Code Optimization</li>
+                        <li>Database Tuning</li>
+                        <li>Caching Strategies</li>
+                        <li>SEO</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In <span class="text-purple">Touch</span></h2>
+                <p>Let's discuss your project and bring your ideas to life</p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>I'm always interested in new opportunities and exciting projects. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+
+                    <div class="contact-items">
+                        <a href="mailto:john.doe@example.com" class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <p>john.doe@example.com</p>
+                            </div>
+                        </a>
+
+                        <a href="tel:+15551234567" class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Phone</h4>
+                                <p>+1 (555) 123-4567</p>
+                            </div>
+                        </a>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Location</h4>
+                                <p>San Francisco, CA</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="availability">
+                        <h4>Available for:</h4>
+                        <ul>
+                            <li>• Freelance Projects</li>
+                            <li>• Full-time Opportunities</li>
+                            <li>• Consulting & Code Reviews</li>
+                            <li>• Speaking Engagements</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required placeholder="Your name">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required placeholder="What's this about?">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" required rows="5" placeholder="Tell me about your project..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-primary full-width">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-social">
+                    <a href="#" class="footer-social-link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="footer-social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="footer-social-link"><i class="fab fa-twitter"></i></a>
+                </div>
+                
+                <div class="footer-text">
+                    <span>Made with</span>
+                    <i class="fas fa-heart text-purple"></i>
+                    <span>by John Doe</span>
+                </div>
+                
+                <p class="footer-copyright">© 2024 John Doe. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
